@@ -1,0 +1,1 @@
+export const url = "https://it-blog-posts.herokuapp.com/api/"
