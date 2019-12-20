@@ -45,13 +45,12 @@ code {
 }
 
 #root {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/background.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./images//background.jpg');
   min-height: 100vh;
-  /* background-image: url("/background.jpg"); */
 }
 
 .nav {
-  background-image: url("/background.jpg");
+  background-image: url('./images//background.jpg');
   border: none;
 }
 
