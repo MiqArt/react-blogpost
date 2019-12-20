@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-blogpost/static/css/main.88799620.chunk.css",
+    "main.css": "/react-blogpost/static/css/main.464a2ff5.chunk.css",
     "main.js": "/react-blogpost/static/js/main.c6b9a4d2.chunk.js",
     "main.js.map": "/react-blogpost/static/js/main.c6b9a4d2.chunk.js.map",
     "runtime-main.js": "/react-blogpost/static/js/runtime-main.2692c840.js",
@@ -9,17 +9,18 @@
     "static/js/2.bb97b996.chunk.js": "/react-blogpost/static/js/2.bb97b996.chunk.js",
     "static/js/2.bb97b996.chunk.js.map": "/react-blogpost/static/js/2.bb97b996.chunk.js.map",
     "index.html": "/react-blogpost/index.html",
-    "precache-manifest.8cd99109dc1446888765ecd37085e955.js": "/react-blogpost/precache-manifest.8cd99109dc1446888765ecd37085e955.js",
+    "precache-manifest.b0bce6ca04323c4eb22943a103edd7d3.js": "/react-blogpost/precache-manifest.b0bce6ca04323c4eb22943a103edd7d3.js",
     "service-worker.js": "/react-blogpost/service-worker.js",
     "static/css/2.4e153dcf.chunk.css.map": "/react-blogpost/static/css/2.4e153dcf.chunk.css.map",
-    "static/css/main.88799620.chunk.css.map": "/react-blogpost/static/css/main.88799620.chunk.css.map",
+    "static/css/main.464a2ff5.chunk.css.map": "/react-blogpost/static/css/main.464a2ff5.chunk.css.map",
+    "static/media/main.css": "/react-blogpost/static/media/background.1b45a728.jpg",
     "static/media/font-awesome.min.css": "/react-blogpost/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.2692c840.js",
     "static/css/2.4e153dcf.chunk.css",
     "static/js/2.bb97b996.chunk.js",
-    "static/css/main.88799620.chunk.css",
+    "static/css/main.464a2ff5.chunk.css",
     "static/js/main.c6b9a4d2.chunk.js"
   ]
 }
