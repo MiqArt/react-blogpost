@@ -14,7 +14,7 @@ function BlogCard({ posts, inWorkspace, removePost, updatePost }) {
                   <button onClick={removePost.bind(null, blog.id)} type="button" className="close">
                     <i className="fa fa-trash"></i>
                   </button>
-                  <button onClick={updatePost.bind(null, blog.id)} type="button" className="close mr-2">
+                  <button onClick={updatePost.bind(null, blog)} type="button" className="close mr-2">
                     <i className="fa fa-pencil"></i>
                   </button>
                 </div>

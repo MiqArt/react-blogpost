@@ -7,20 +7,21 @@ import Modal from '../../components/Modal/Modal';
 const Workspace = () => {
   const [loggedUser, setLoggedUser] = useState({});
   const [posts, setPosts] = useState([]);
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState({show: false, event: "CREATE"});
+  const [updating, setUpdating] = useState({id: 0, title: "", descritption: ""});
 
+  const onShow = (event = "CREATE") => {
+    setShowModal({show: !showModal.show, event: event})
+  }
 
-  const onShow = () => {
-    setShowModal(!showModal)
+  const updatePost = (data) => {
+    setUpdating(data);
+    onShow("UPDATE");
   }
 
   const removePost = (id) => {
     Api.posts.remove(id);
     setPosts(posts.filter(post => post.id !== id));
-  }
-
-  const updatePost = () => {
-    alert("//...")
   }
 
   useEffect(() => {
@@ -30,7 +31,7 @@ const Workspace = () => {
     if (loggedUser.id) {
       Api.people.getUserPosts(loggedUser.id).then(res => res.json()).then(data => setPosts(data));
     }
-  }, [loggedUser, showModal])
+  }, [loggedUser, showModal, showModal.event])
 
   return (
     <div className="">
@@ -39,7 +40,7 @@ const Workspace = () => {
         <div className="card p-3" style={{border: 'none'}}>
           <div className="card-header d-flex justify-content-between align-items-center mb-4 text-primary">
             Welcome {loggedUser.username}
-            <button onClick={onShow} type="button" className="btn btn-primary"><i class="fa fa-plus-square"></i> Create Post</button>
+            <button onClick={onShow} type="button" className="btn btn-primary"><i className="fa fa-plus-square"></i> Create Post</button>
           </div>
           <div className="row">
             <div className="col-12">
@@ -48,7 +49,7 @@ const Workspace = () => {
           </div>
         </div>
       </div>
-      {showModal && <Modal author={loggedUser.username} onShow={onShow} />}
+      {showModal.show && <Modal event={showModal.event} author={loggedUser.username} updating={updating} onShow={onShow} />}
     </div>
   );
 }
